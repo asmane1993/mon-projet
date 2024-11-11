@@ -1,0 +1,174 @@
+ :root {
+  --main-color: #F8C434;
+  --dark-color:#252525;
+  --green-color:#097969;
+}
+
+
+.background-main{
+  background-color: var(--main-color);
+}
+
+.background-dark{
+  background-color: var(--dark-color);
+}
+
+.main-text{
+  color:var(--main-color);
+}
+
+.text-green{
+  color:var(--green-color);
+}
+
+
+.text-black{
+  color: var(--dark-color);
+}
+
+.main-btn{
+  border:2px solid var(--main-color);
+  background-color:var(--main-color);
+  color:var(--dark-color);
+}
+
+.main-btn:hover{
+  background-color:white;
+  color:var(--main-color);
+}
+
+.main-btn-outline{
+  border:2px solid var(--main-color);
+  color:var(--main-color);
+}
+
+.main-btn-outline:hover{
+  background-color:var(--main-color);
+  color:white;
+}
+
+.dark-btn{
+  border:2px solid var(--dark-color);
+  background-color:var(--dark-color);
+  color:var(--main-color);
+}
+
+.dark-btn:hover{
+  border:2px solid var(--dark-color);
+  background-color:var(--main-color);
+  color:var(--dark-color);
+}
+
+
+.icon-bouncing{
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(5px);
+  }
+  50% {
+      transform: translateY(-5px);
+  }
+}
+
+header{
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+header .nav div{
+  cursor: pointer;
+}
+
+header .nav{
+  color:var(--main-color);
+}
+
+button[disabled]{
+  opacity: 0.6;
+}
+
+.progress-item {
+  width: 100%;
+  background-color: #f3f3f3;
+}
+
+.progress-content {
+  height: 25px;
+  width:auto;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  background-color:var(--main-color);
+}
+
+
+.input{
+  display:flex;
+  align-items:center;
+  border: 1px solid #DEE2E6;
+}
+
+.input:hover{
+  border: 1px solid var(--main-color);
+}
+
+.step{
+  color: var(--main-color);
+  transition:1s;
+}
+
+.img{
+  object-fit: cover;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.details-panel {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height:100%;
+  background-color:var(--dark-color);
+  color: white;
+  padding: 20px;
+  transition: bottom 0.5s ease;
+  opacity:0.8;
+}
+
+.image-container:hover .details-panel {
+  bottom: 0;
+}
+
+.service-item:hover .title{
+  opacity: 0;
+}
+
+@keyframes glow {
+  0% { text-shadow: 0 0 50 #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px var(--main-color), 0 0 70px var(--main-color) 0 0 80px var(--main-color), 0 0 100px var(--main-color), 0 0 150px var(--main-color); }
+  50% { text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px var(--main-color), 0 0 70px var(--main-color), 0 0 80px var(--main-color), 0 0 100px var(--main-color), 0 0 150px var(--main-color), 0 0 200px var(--main-color); }
+  100% { text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px var(--main-color), 0 0 70px var(--main-color), 0 0 80px var(--main-color), 0 0 100px var(--main-color), 0 0 150px var(--main-color); }
+}
+
+.glowing-text {
+  color: var(--main-color);
+  animation: glow 2s infinite alternate;
+}
+
+
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.blink {
+  animation: blink 1s infinite;
+}
